@@ -52,6 +52,7 @@ names(TidyData)<-gsub("-freq()", "Frequency", names(TidyData), ignore.case = TRU
 names(TidyData)<-gsub("angle", "Angular", names(TidyData))
 names(TidyData)<-gsub("gravity", "Gravity", names(TidyData))
 
+# Create text file of tidy data:
 FinalTidyData <- TidyData %>%
         group_by(subject, activity) %>%
         summarise_all(funs(mean))
