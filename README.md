@@ -2,6 +2,7 @@
 Getting and Cleaning Data Week 4 Assignment
 
 •	This is the course project assigned in week 4 of the Getting and Cleaning Data course.
+
 •	The included R script, run_analysis.R, accomplishes:
 
 1.	Downloads the datasets from the web if it does not already exist in the working directory.
