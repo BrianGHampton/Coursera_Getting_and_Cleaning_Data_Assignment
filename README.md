@@ -19,4 +19,4 @@ Files:
     5.	Appropriately labels the data set with descriptive variable names.
     6.	Creates an independent tidy data set with the average of each variable for each activity and subject.
     
-•	file tidydata.txt. The final data output from completing the above steps. 
+•	tidydata.txt. The final data output from completing the above steps. 
