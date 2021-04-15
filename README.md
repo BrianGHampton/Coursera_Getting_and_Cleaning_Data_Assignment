@@ -2,10 +2,11 @@
 Getting and Cleaning Data Week 4 Peer-graded Assignment
 This repository contains Brian Hampton's submission for the Getting and Cleaning Data course Assignment.
 
-Dataset
+Dataset:
+
 Human Activity Recognition Using Smartphones
 
-Files
+Files:
 
 •	CodeBook.md. A code book that describes the data, variables, and actions taken to clean the data.
 
