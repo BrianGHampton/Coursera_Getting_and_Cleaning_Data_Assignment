@@ -6,6 +6,7 @@ Dataset
 Human Activity Recognition Using Smartphones
 
 Files
+
 •	CodeBook.md. A code book that describes the data, variables, and actions taken to clean the data.
 
 •	run_analysis.R. Accomplishes the data preparation required in the assignment's instructions:
