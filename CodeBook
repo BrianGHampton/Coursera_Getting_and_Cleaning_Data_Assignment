@@ -1,0 +1,43 @@
+Coursera Getting and Cleaning Data Week 4 Assignment
+
+Code Book
+
+The run_analysis.R script downloads the dataset and then completes the data preparation required in the assignment instructions:
+
+1.	Download  and unzips the dataset and saves it into a folder called UCA HAR Dataset
+
+2.	Assign the data to variables:
+    •	features <- features.txt
+    •	activities <- activity_labels.txt
+    •	subject_test <- subject_test.txt
+    •	x_test <- X_test.txt
+    •	y_test <- Y_text.txt
+    •	subject_train <- subject_train.txt
+    •	x_train <- X_train.txt
+    •	y_train <- Y_train.txt
+    
+3.	Merge the training and test data sets to create one data set:
+    •	X merges the x_train and x_test using the rbind() function
+    •	Y merges the y_train and y_test using the rbind() function
+    •	Subject merges subject_train and subject_test using the rbind() function
+    •	Merged_Data merges Subject, X, and Y using the cbind() function
+    
+4.	Extract only the mean and standard deviation for each measurement:
+    •	TidyData subsets Merged_Data with only the subject and code columns and mean and standard deviation for each measurement
+    
+5.	Use descriptive activity names to name the activities in the data set:
+    •	The numbers in the ‘code’ column of TidyData are replaced with the corresponding activity in the second column of the activities variable
+    
+6.	Labels the data set with appropriately descriptive variable names:
+    •	‘code’ column in TidyData renamed to ‘activity’
+    •	Replace all column names containing ‘Acc’ with ‘Acceleration’
+    •	Replace all column names containing ‘Gyro’ with ‘Gyroscope’
+    •	Replace all column names containing ‘BodyBody’ with ‘Body’
+    •	Replace all column names containing ‘Mag’ with ‘Magnitude’
+    •	Replace all column names beginning with ‘t’ with ‘Time’
+    •	Replace all column names beginning with’f’ with ‘Frequency’
+    •	Replace all column names containing ‘angle’ with ‘Angular’
+    
+7.	From the TidyData created in step 4, creates a second, independent tidy set with the average of each variable for each activity and each subject.
+    •	Exports TidyData into a file named TidyData.txt and saves it in the working directory
+ 
